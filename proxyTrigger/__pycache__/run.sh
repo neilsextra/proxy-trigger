@@ -1,0 +1,1 @@
+python3 train.py --img 1024 --batch 16 --epochs 300 --data yolo.yaml --cfg yolo_conv.yaml --weights '' --device 0

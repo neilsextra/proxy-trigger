@@ -1,0 +1,26 @@
+{
+    "scriptFile": "__init__.py",
+    "bindings": [{
+            "authLevel": "function",
+            "type": "httpTrigger",
+            "direction": "in",
+            "name": "req",
+            "methods": [
+                "get",
+                "post"
+            ]
+        },
+        {
+            "type": "eventHub",
+            "direction": "out",
+            "connection": "AzureEventHubBusConnectionString",
+            "name": "response",
+            "eventHubName": "tso-test"
+        },
+        {
+            "type": "http",
+            "direction": "out",
+            "name": "$return"
+        }
+    ]
+}
